@@ -37,10 +37,10 @@ Thanks for taking the workshop IoT Monitoring for [The Things Network](https://t
 You can watch the video recording of the workshop on [YouTube](https://youtu.be/StEHYDk_lVw).
 
 - We provide workshops and courses for various technologies:
-  - IoT (Arduino, Particle, LoRaWAN, ...)
-  - Web (Java, .NET, JavaScript, C/C++)
-  - DevOps (Docker Swarm, Kubernetes, GitLab, Zabbix, Grafana, PostgreSQL)
-  - and more.
+  - IoT (Arduino, Particle, LoRaWAN, MQTT, ...)
+  - Web (Java, .NET, JavaScript, C/C++, ...)
+  - DevOps (Docker Swarm, Kubernetes, GitLab, Zabbix, Grafana, PostgreSQL, ...)
+  - and more
 
 List of available workshops you can find at [https://hackthebase.com/workshops](https://hackthebase.com/workshops)
 
