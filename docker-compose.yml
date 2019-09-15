@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  influxdb:
+    image: influxdb:1.7.8
+    container_name: influxdb
+    ports:
+      - 8086:8086
+    volumes:
+      - ${DATA_DIR}/influxdb:/var/lib/influxdb
+    restart: always
+
+  grafana:
+    image: grafana/grafana:5.4.3
+    container_name: grafana
+    depends_on:
+      - influxdb
+    ports:
+      - 3000:3000
+    volumes:
+      - ${DATA_DIR}/grafana:/var/lib/grafana
+    restart: always
+
+  ttn-bridge:
+    build: ./ttn-bridge
+    image: ucwlabs/ttn-bridge:latest
+    container_name: ttn-bridge
+    depends_on:
+      - influxdb
+    restart: always

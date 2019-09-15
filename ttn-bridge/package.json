@@ -1,0 +1,24 @@
+{
+  "name": "ttn-bridge",
+  "version": "1.0.0",
+  "description": "TTN Bridge in Node.js",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Hrdlicka <tomas@hrdlicka.co.uk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ucwlabs/iot-monitoring-ttn.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "influx": "^5.4.1",
+    "ttn": "^2.3.3"
+  }
+}

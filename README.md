@@ -218,7 +218,7 @@ $ npm -v
 #### Libraries
 
 ```
-$ cd ttn-bridge
+$ cd ttn-bridge/
 $ npm install
 ```
 

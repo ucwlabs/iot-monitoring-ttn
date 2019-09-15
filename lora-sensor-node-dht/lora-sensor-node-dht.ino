@@ -27,8 +27,8 @@
 
 #include <lmic.h>
 #include <hal/hal.h>
-#include "SPI.h"
-#include "DHT.h"
+#include <SPI.h>
+#include <DHT.h>
 
 #define DHTPIN  9
 #define DHTTYPE DHT11
@@ -36,13 +36,13 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // LoRaWAN NwkSKey - Network session key
-static const PROGMEM u1_t NWKSKEY[16] = { 0x51, 0x9E, 0x03, 0x6A, 0x4D, 0xA9, 0x8E, 0xBB, 0x9A, 0x5C, 0x20, 0xEA, 0x62, 0x2C, 0xEF, 0xEC };
+static const PROGMEM u1_t NWKSKEY[16] = { 0x00, 0xFB, 0xA7, 0xBC, 0x12, 0x16, 0x35, 0x12, 0x9C, 0x42, 0xEC, 0x48, 0xE1, 0x59, 0xB7, 0x7E };
 
 // LoRaWAN AppSKey - Application session key
-static const u1_t PROGMEM APPSKEY[16] = { 0x51, 0x9E, 0x03, 0x6A, 0x4D, 0xA9, 0x8E, 0xBB, 0x9A, 0x5C, 0x20, 0xEA, 0x62, 0x2C, 0xEF, 0xEC };
+static const u1_t PROGMEM APPSKEY[16] = { 0xEC, 0x0A, 0x3C, 0x05, 0x9F, 0xD4, 0xDA, 0x68, 0xBE, 0xF4, 0xA4, 0xD7, 0xA6, 0xFD, 0xB8, 0x46 };
 
 // LoRaWAN end-device address (DevAddr)
-static const u4_t DEVADDR = 0x260217CE; // <-- Change this address for every node!
+static const u4_t DEVADDR = 0x260117E8; // <-- Change this address for every node!
 
 // These callbacks are only used in over-the-air activation, so they are
 // left empty here (we cannot leave them out completely unless
@@ -291,6 +291,7 @@ void do_sleep() {
 }
 
 void readDHT(byte data[]) {
+  // Read humidity
   float humidity = dht.readHumidity();
   // Read temperature as Celsius (the default)
   float temperature = dht.readTemperature();
