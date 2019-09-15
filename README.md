@@ -52,6 +52,7 @@ Clone (or download and unzip) the repository
 
 ```	
 $ git clone https://github.com/ucwlabs/iot-monitoring-ttn.git iot-monitoring-ttn
+$ cd iot-monitoring-ttn/
 $ chmod +x run.sh
 ```
 
