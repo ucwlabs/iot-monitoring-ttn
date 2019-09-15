@@ -151,7 +151,7 @@ for (int i = 1; i <= 71; i++) LMIC_disableChannel(i);
 Use the decoder functions below as payload function at the [TTN console](https://console.thethingsnetwork.org) 
 for DHT and BME280 examples respectively
 
-DHT Sensor
+DHT sensor
 ```
 function Decoder(bytes, fport) {
   var t = (bytes[0] & 0x80 ? 0xFFFF << 16 : 0) | bytes[0] << 8 | bytes[1];
@@ -166,7 +166,7 @@ function Decoder(bytes, fport) {
   };
 }
 ```
-BME280 Sensor
+BME280 sensor
 ```
 function Decoder(bytes, fport) {
   var t = (bytes[0] & 0x80 ? 0xFFFF << 16 : 0) | bytes[0] << 8 | bytes[1];
@@ -185,7 +185,7 @@ The resultant payload in JSON format for the DHT sensor can be seen below:
 
 #### FULL EXAMPLE
   
-The full code for the LoRa Sensor Node with DHT Sensor can be found 
+The full code for the LoRa Sensor Node with DHT sensor can be found 
 [here](https://github.com/ucwlabs/iot-monitoring-ttn/blob/master/lora-sensor-node-dht/lora-sensor-node-dht.ino).
 
 ### TTN Bridge (Node.js)
