@@ -56,7 +56,7 @@ $ chmod +x run.sh
 
 ### LoRa Sensor Node with DHT sensor
 
-<img src="doc/images/lora-sensor-node-dht.jpg" width="700" height="410" alt="LoRa Sensor Node with DHT sensor" />
+<img src="doc/images/lora-sensor-node-dht.jpg" width="320" height="240" alt="LoRa Sensor Node with DHT sensor" />
 
 #### LIBRARIES
 
@@ -181,7 +181,7 @@ function Decoder(bytes, fport) {
 ```
 
 The resultant payload in JSON format for the DHT sensor can be seen below:
-<img src="doc/images/ttn-payload-format.png" alt="TTN Payload Format" />
+![](doc/images/ttn-payload-format.png)
 
 #### FULL EXAMPLE
   
@@ -233,7 +233,7 @@ const appId = "htb-iot-monitoring-dht";
 const accessKey = "your_access_key";
 ```
 * Go to: Applications -> htb-iot-monitoring-dht , and scroll to the bottom of the page to see access keys 
-<img src="doc/images/ttn-access-key.png" width="700" height="410" alt="TTN Application - Access Keys" />
+![](doc/images/ttn-access-key.png)
 
 #### Run TTN Bridge
 
@@ -249,11 +249,11 @@ Open web browser and go to [http://localhost:3000](http://localhost:3000)
 * Username: admin
 * Password: admin
 
-<img src="doc/images/grafana-login.png" alt="Grafana - Login" />
+![](doc/images/grafana-login.png)
 
 Follow instruction from [slides](https://drive.google.com/open?id=1eniaB84t7fcsx1t2sj50CuGhhJn-p38l) (pages # 16-21)
 to configure the [data source](https://grafana.com/docs/features/datasources/influxdb/) 
 for [InfluxDB](https://www.influxdata.com/products/influxdb-overview/) 
 and [dashboard](https://grafana.com/docs/guides/getting_started/).
 
-<img src="doc/images/iot-monitoring-ttn.jpg" alt="IoT Monitoring with The Things Network" />
+![](doc/images/iot-monitoring-ttn.jpg)
