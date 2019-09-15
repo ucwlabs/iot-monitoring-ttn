@@ -51,7 +51,7 @@ Do you need a private workshop or course? [Contact us](https://ucwlabs.com/displ
 Clone (or download and unzip) the repository
 
 ```	
-$ git clone https://github.com/ucwlabs/iot-monitoring-ttn.git
+$ git clone https://github.com/ucwlabs/iot-monitoring-ttn.git iot-monitoring-ttn
 $ chmod +x run.sh
 ```
 
