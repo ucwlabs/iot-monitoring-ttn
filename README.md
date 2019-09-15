@@ -17,6 +17,7 @@ Environment monitoring with The Things Network, InfluxDB, and Grafana
 
 ## Resources
 * [Slides](https://drive.google.com/open?id=1eniaB84t7fcsx1t2sj50CuGhhJn-p38l)
+* [Poster](https://drive.google.com/open?id=1gUg9RY4jvB1ur5ti7anK1Ws_2IgZeVRm)
 * [Video](https://youtu.be/StEHYDk_lVw)
 * [Adafruit Feather M0 Radio with Lora Radio Module](https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module)
 * [Sensor - DHT11](https://www.adafruit.com/product/386)
