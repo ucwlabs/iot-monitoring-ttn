@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "influx": "^5.4.1",
     "ttn": "^2.3.3"
   }
